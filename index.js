@@ -65,7 +65,6 @@ const circ3 = new mojs.Shape({
 
 const timeline = new mojs.Timeline().add(burst, circ, burst2, circ2, circ3);
 document.addEventListener('click', (e)=> {
-    console.log('a',e.pageX,e.pageY );
    burst.tune({ x: e.pageX, y: e.pageY });
     burst2.tune({ x: e.pageX, y: e.pageY });
     circ.tune({ x: e.pageX, y: e.pageY });
